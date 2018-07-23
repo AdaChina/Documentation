@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/documentation',
+  base: '/documentation/',
   title: '广州艾道',
   description: 'ADAChina Backend Documentation',
   serviceWorker: true,
