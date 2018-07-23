@@ -1,10 +1,10 @@
 module.exports = {
+  base: '/',
   title: '广州艾道',
   description: 'ADAChina Backend Documentation',
   serviceWorker: true,
   themeConfig: {
     repo: 'AdaChina/Documentation',
-    docsDir: 'docs',
     serviceWorker: {
       updatePopup: true
     },
