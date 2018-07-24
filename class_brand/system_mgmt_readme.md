@@ -71,3 +71,28 @@ Content-Type: application/json
 ```
 GET /system_management/schools?page=2
 ```
+
+## 身份验证
+
+除登陆接口外，所有API接口都会验证用户身份。如身份验证失败，接口会返回以下错误的一种。
+
+**未登陆**
+```
+Status: 403 Unauthorized
+```
+```json
+{
+  "authentication": "未登陆"
+}
+```
+
+**权限不足**
+
+```
+Status: 403 Unauthorized
+```
+```json
+{
+  "authorization": "权限不足：当前接口仅允许系统管理员使用"
+}
+```
