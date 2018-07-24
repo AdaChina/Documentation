@@ -7,7 +7,7 @@
     <meta name="description" content="ADAChina Backend Documentation">
     
     
-    <link rel="preload" href="/documentation/assets/css/0.styles.15ef48ad.css" as="style"><link rel="preload" href="/documentation/assets/js/app.18388822.js" as="script"><link rel="preload" href="/documentation/assets/js/7.128d9c93.js" as="script"><link rel="prefetch" href="/documentation/assets/js/4.5783ddbf.js"><link rel="prefetch" href="/documentation/assets/js/2.ea010887.js"><link rel="prefetch" href="/documentation/assets/js/3.c3df40e9.js"><link rel="prefetch" href="/documentation/assets/js/5.bc582c5c.js"><link rel="prefetch" href="/documentation/assets/js/6.721db351.js"><link rel="prefetch" href="/documentation/assets/js/8.62e5b0e4.js"><link rel="prefetch" href="/documentation/assets/js/9.49415ee5.js">
+    <link rel="preload" href="/documentation/assets/css/0.styles.15ef48ad.css" as="style"><link rel="preload" href="/documentation/assets/js/app.3a32b20e.js" as="script"><link rel="preload" href="/documentation/assets/js/7.bf3db4e8.js" as="script"><link rel="prefetch" href="/documentation/assets/js/4.5783ddbf.js"><link rel="prefetch" href="/documentation/assets/js/2.ea010887.js"><link rel="prefetch" href="/documentation/assets/js/3.c3df40e9.js"><link rel="prefetch" href="/documentation/assets/js/5.bc582c5c.js"><link rel="prefetch" href="/documentation/assets/js/6.721db351.js"><link rel="prefetch" href="/documentation/assets/js/8.62e5b0e4.js"><link rel="prefetch" href="/documentation/assets/js/9.49415ee5.js">
     <link rel="stylesheet" href="/documentation/assets/css/0.styles.15ef48ad.css">
   </head>
   <body>
@@ -27,11 +27,11 @@
   <span class="token string">&quot;authenticity_token&quot;</span>： <span class="token string">&quot;1HxW...sa234=&quot;</span>
 <span class="token punctuation">}</span>
 </code></pre></div><h2 id="分页信息"><a href="#分页信息" aria-hidden="true" class="header-anchor">#</a> 分页信息</h2><p><strong>分页字段</strong></p><p>列表类接口，会带上分页信息。</p><table><thead><tr><th>字段名</th><th>描述</th></tr></thead><tbody><tr><td>pages</td><td>列表总页数</td></tr><tr><td>page</td><td>当前显示页</td></tr><tr><td>total</td><td>列表资源总数</td></tr><tr><td>items</td><td>当前显示资源数量</td></tr><tr><td>items_per_page</td><td>默认每页资源数量</td></tr></tbody></table><p><strong>分页参数</strong></p><p>列表类接口可通过以下分页参数，控制返回信息。</p><table><thead><tr><th>参数名</th><th>参数类型</th><th>必填</th><th>描述</th><th>示例</th></tr></thead><tbody><tr><td>page</td><td>integer</td><td>否</td><td>返回页</td><td>2</td></tr></tbody></table><p>示例:</p><div class="language- extra-class"><pre class="language-text"><code>GET /system_management/schools?page=2
-</code></pre></div><h2 id="身份验证"><a href="#身份验证" aria-hidden="true" class="header-anchor">#</a> 身份验证</h2><p>除登陆接口外，所有API接口都会验证用户身份。如身份验证失败，接口会返回以下错误的一种。</p><p><strong>未登陆</strong></p><div class="language- extra-class"><pre class="language-text"><code>Status: 403 Unauthorized
+</code></pre></div><h2 id="身份验证"><a href="#身份验证" aria-hidden="true" class="header-anchor">#</a> 身份验证</h2><p>除登陆接口外，所有API接口都会验证用户身份。如身份验证失败，接口会返回以下错误的一种。</p><p><strong>未登陆</strong></p><div class="language- extra-class"><pre class="language-text"><code>Status: 401 Unauthorized
 </code></pre></div><div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
   <span class="token property">&quot;authentication&quot;</span><span class="token operator">:</span> <span class="token string">&quot;未登陆&quot;</span>
 <span class="token punctuation">}</span>
-</code></pre></div><p><strong>权限不足</strong></p><div class="language- extra-class"><pre class="language-text"><code>Status: 403 Unauthorized
+</code></pre></div><p><strong>权限不足</strong></p><div class="language- extra-class"><pre class="language-text"><code>Status: 401 Unauthorized
 </code></pre></div><div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
   <span class="token property">&quot;authorization&quot;</span><span class="token operator">:</span> <span class="token string">&quot;权限不足：当前接口仅允许系统管理员使用&quot;</span>
 <span class="token punctuation">}</span>
@@ -42,6 +42,6 @@
           身份验证
         </a> →
       </span></p></div></div></div></div>
-    <script src="/documentation/assets/js/7.128d9c93.js" defer></script><script src="/documentation/assets/js/app.18388822.js" defer></script>
+    <script src="/documentation/assets/js/7.bf3db4e8.js" defer></script><script src="/documentation/assets/js/app.3a32b20e.js" defer></script>
   </body>
 </html>
