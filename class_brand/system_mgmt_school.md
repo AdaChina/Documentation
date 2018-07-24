@@ -33,7 +33,7 @@ Status: 200 OK
 
 ```json
 [
-  {
+  schools: {
     "id"=>1,
     "name"=>"希望小学",
     "school_type"=>["小学"],
@@ -125,22 +125,20 @@ Status: 200 OK
 ```
 
 ```json
-[
-  {
-    "id"=>1,
-    "name"=>"希望小学",
-    "school_type"=>["小学"],
-    "district_code"=>440101,
-    "assistant_image_url"=>"https://image.com/1.png",
-    "badge_url"=>"https://image.com/2.png",
-    "device_count"=>10,
-    "homeroom_count"=>2,
-    "teacher_count"=>4,
-    "student_count"=>4
-    "created_at"=>"2018-07-24T14:45:15.000+08:00",
-    "updated_at"=>"2018-07-24T14:45:15.000+08:00"
-  }
-]
+{
+  "id"=>1,
+  "name"=>"希望小学",
+  "school_type"=>["小学"],
+  "district_code"=>440101,
+  "assistant_image_url"=>"https://image.com/1.png",
+  "badge_url"=>"https://image.com/2.png",
+  "device_count"=>10,
+  "homeroom_count"=>2,
+  "teacher_count"=>4,
+  "student_count"=>4
+  "created_at"=>"2018-07-24T14:45:15.000+08:00",
+  "updated_at"=>"2018-07-24T14:45:15.000+08:00"
+}
 ```
 
 ## 更新学校信息

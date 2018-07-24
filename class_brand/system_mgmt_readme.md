@@ -21,12 +21,12 @@ TBD
 
 系统管理类API路由前缀:
 ```
-${API_ENDPOINT}\system_management\
+${API_ENDPOINT}/system_management/
 ```
 
 学校管理类API路由前缀:
 ```
-${API_ENDPOINT}\school_management\
+${API_ENDPOINT}/school_management/
 ```
 
 ## 请求格式
@@ -57,6 +57,7 @@ Content-Type: application/json
 | page | 当前显示页 |
 | total | 列表资源总数 |
 | items | 当前显示资源数量 |
+| items_per_page | 默认每页资源数量 |
 
 **分页参数**
 
