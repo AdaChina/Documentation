@@ -1,4 +1,4 @@
-# 身份验证API
+# 身份验证
 
 登陆API管理班牌后台页面登陆和登出动作
 
@@ -23,9 +23,8 @@ POST /sessions
 | id | 用户ID |
 | type | 用户类型 |
 | name | 用户姓名 |
-| avatar_url | 用户头像 |
 
-| type 参数对照 | 描述 |
+| type 值参考 | 描述 |
 | -- | -- |
 | SystemAdmin | 系统管理员 |
 | SchoolAdmin | 学校管理员 |
@@ -42,8 +41,7 @@ Status: 200 OK
 {
   "id": 1,
   "type": "SystemAdmin",
-  "name": "王毅",
-  "avatar_url": "https://image.com/avatar.jpg"
+  "name": "王毅"
 }
 ```
 
@@ -70,7 +68,13 @@ DELETE /sessions
 成功响应:
 
 ```
-Status: 302 Found
+Status: 200 OK
+```
+
+```json
+{
+  "message": "success"
+}
 ```
 
 登出成功后，会重定向到登陆页面。

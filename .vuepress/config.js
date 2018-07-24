@@ -38,7 +38,9 @@ module.exports = {
           title: '后台管理',
           collapsable: true,
           children: [
-            'session',
+            'system_mgmt_readme',
+            'system_mgmt_session',
+            'system_mgmt_school'
           ]
         },
         {
