@@ -78,7 +78,7 @@ GET /system_management/schools?page=2
 
 **未登陆**
 ```
-Status: 403 Unauthorized
+Status: 401 Unauthorized
 ```
 ```json
 {
@@ -89,7 +89,7 @@ Status: 403 Unauthorized
 **权限不足**
 
 ```
-Status: 403 Unauthorized
+Status: 401 Unauthorized
 ```
 ```json
 {
