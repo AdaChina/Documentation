@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "dd1a79345bcf7604f077b90c476334b4"
+    "revision": "feb7b668a98943435e4e610f5ba0f2e5"
   },
   {
     "url": "arithmetic/index.html",
-    "revision": "d9c334c448046df2fb3f6589c39f9929"
+    "revision": "7b03106f9b239365955eb9cb86b2cff9"
   },
   {
     "url": "assets/css/0.styles.15ef48ad.css",
@@ -80,44 +80,44 @@ self.__precacheManifest = [
     "revision": "7556dcb5084c3ef37223d73ecca0c89a"
   },
   {
-    "url": "assets/js/app.fa53399d.js",
-    "revision": "aa58abe46892b74240b7c15a1ddb0077"
+    "url": "assets/js/app.a6f65cf3.js",
+    "revision": "3add0d6f1d1bac9a30a7dd627c854d60"
   },
   {
     "url": "central/index.html",
-    "revision": "25bd549066e7e3a0974f9c31ba17fcc1"
+    "revision": "95f0394726274aea3adf0c112c5b2785"
   },
   {
     "url": "class_brand/error_code.html",
-    "revision": "e125c7322ad7ec0dc29a85da8ff430c2"
+    "revision": "9c2b882ceb74121cf496a88af5a43fd1"
   },
   {
     "url": "class_brand/index.html",
-    "revision": "52118573ac7238f35df1e7c85313e54c"
+    "revision": "6ac28c77d532585b3abcf1d020400fe8"
   },
   {
     "url": "class_brand/mgmt_readme.html",
-    "revision": "128f3e1a54e863622fde9bc05d078d0f"
+    "revision": "7663c65c6288a2094fcf085bb2315524"
   },
   {
     "url": "class_brand/mgmt_session.html",
-    "revision": "5283a22a35a966f9b54ce4e64d629c25"
+    "revision": "e9cb5226f180be9c8a21a374bb837a9b"
   },
   {
     "url": "class_brand/school_mgmt_school.html",
-    "revision": "f011543ee5c06d3ef8ca4830d1bcdebd"
+    "revision": "7930d8f95feeb681f1e94e0a505adad0"
   },
   {
     "url": "class_brand/system_mgmt_school.html",
-    "revision": "99ff8fabce11aa22d068112a320b43f8"
+    "revision": "78d560aef4cd35bdb2c0d04b95ba08a9"
   },
   {
     "url": "class_brand/system_mgmt_system_admin.html",
-    "revision": "e3dca9cee4c11a6ecb54fea896154291"
+    "revision": "fed1058bbc9945f8e33ed7b00d6ecaff"
   },
   {
     "url": "index.html",
-    "revision": "5904f6c8cec268fb226c277c187946f2"
+    "revision": "932125638223dca6061f5b3f055fd567"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
