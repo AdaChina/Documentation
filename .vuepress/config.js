@@ -32,15 +32,28 @@ module.exports = {
           title: '班牌端',
           collapsable: true,
           children: [
+            'error_code'
           ]
         },
         {
-          title: '后台管理',
+          title: '系统后台管理',
           collapsable: true,
           children: [
-            'system_mgmt_readme',
-            'system_mgmt_session',
-            'system_mgmt_school'
+            'mgmt_readme',
+            'error_code',
+            'mgmt_session',
+            'system_mgmt_school',
+            'system_mgmt_system_admin'
+          ]
+        },
+        {
+          title: '学校后台管理',
+          collapsable: true,
+          children: [
+            'mgmt_readme',
+            'error_code',
+            'mgmt_session',
+            'school_mgmt_school'
           ]
         },
         {

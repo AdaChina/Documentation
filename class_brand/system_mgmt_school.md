@@ -15,7 +15,7 @@ GET /system_management/schools
 | id | 学校ID |
 | name | 学校名称 |
 | school_type | 学校类型 |
-| district_code | 行政区编码
+| district_code | 行政区编码 |
 | assistant_image_url | 小艾助手图片 |
 | badge_url | 校徽地址 |
 | device_count | 设备数量 |
@@ -32,22 +32,24 @@ Status: 200 OK
 ```
 
 ```json
-[
-  schools: {
-    "id"=>1,
-    "name"=>"希望小学",
-    "school_type"=>["小学"],
-    "district_code"=>440101,
-    "assistant_image_url"=>"https://image.com/1.png",
-    "badge_url"=>"https://image.com/2.png",
-    "device_count"=>10,
-    "homeroom_count"=>2,
-    "teacher_count"=>4,
-    "student_count"=>4
-    "created_at"=>"2018-07-24T14:45:15.000+08:00",
-    "updated_at"=>"2018-07-24T14:45:15.000+08:00"
-  }
-]
+{
+  "schools": [
+    {
+      "id": 1,
+      "name": "希望小学",
+      "school_type": ["小学"],
+      "district_code": 440101,
+      "assistant_image_url": "https://image.com/1.png",
+      "badge_url": "https://image.com/2.png",
+      "device_count": 10,
+      "homeroom_count": 2,
+      "teacher_count": 4,
+      "student_count": 4,
+      "created_at": "2018-07-24T14:45:15.000+08:00",
+      "updated_at": "2018-07-24T14:45:15.000+08:00"
+    }
+  ]
+}
 ```
 
 ## 获取单个学校
@@ -87,18 +89,18 @@ Status: 200 OK
 
 ```json
 {
-  "id"=>1,
-  "name"=>"希望小学",
-  "school_type"=>["小学"],
-  "district_code"=>440101,
-  "assistant_image_url"=>"https://image.com/1.png",
-  "badge_url"=>"https://image.com/2.png",
-  "device_count"=>10,
-  "homeroom_count"=>2,
-  "teacher_count"=>4,
-  "student_count"=>4
-  "created_at"=>"2018-07-24T14:45:15.000+08:00",
-  "updated_at"=>"2018-07-24T14:45:15.000+08:00"
+  "id": 1,
+  "name": "希望小学",
+  "school_type": ["小学"],
+  "district_code": 440101,
+  "assistant_image_url": "https://image.com/1.png",
+  "badge_url": "https://image.com/2.png",
+  "device_count": 10,
+  "homeroom_count": 2,
+  "teacher_count": 4,
+  "student_count": 4
+  "created_at": "2018-07-24T14:45:15.000+08:00",
+  "updated_at": "2018-07-24T14:45:15.000+08:00"
 }
 ```
 
@@ -126,18 +128,18 @@ Status: 200 OK
 
 ```json
 {
-  "id"=>1,
-  "name"=>"希望小学",
-  "school_type"=>["小学"],
-  "district_code"=>440101,
-  "assistant_image_url"=>"https://image.com/1.png",
-  "badge_url"=>"https://image.com/2.png",
-  "device_count"=>10,
-  "homeroom_count"=>2,
-  "teacher_count"=>4,
-  "student_count"=>4
-  "created_at"=>"2018-07-24T14:45:15.000+08:00",
-  "updated_at"=>"2018-07-24T14:45:15.000+08:00"
+  "id": 1,
+  "name": "希望小学",
+  "school_type": ["小学"],
+  "district_code": 440101,
+  "assistant_image_url": "https://image.com/1.png",
+  "badge_url": "https://image.com/2.png",
+  "device_count": 10,
+  "homeroom_count": 2,
+  "teacher_count": 4,
+  "student_count": 4
+  "created_at": "2018-07-24T14:45:15.000+08:00",
+  "updated_at": "2018-07-24T14:45:15.000+08:00"
 }
 ```
 
@@ -167,18 +169,18 @@ Status: 200 OK
 ```json
 [
   {
-    "id"=>1,
-    "name"=>"希望小学",
-    "school_type"=>["小学"],
-    "district_code"=>440101,
-    "assistant_image_url"=>"https://image.com/1.png",
-    "badge_url"=>"https://image.com/2.png",
-    "device_count"=>10,
-    "homeroom_count"=>2,
-    "teacher_count"=>4,
-    "student_count"=>4
-    "created_at"=>"2018-07-24T14:45:15.000+08:00",
-    "updated_at"=>"2018-07-24T14:45:15.000+08:00"
+    "id": 1,
+    "name": "希望小学",
+    "school_type": ["小学"],
+    "district_code": 440101,
+    "assistant_image_url": "https://image.com/1.png",
+    "badge_url": "https://image.com/2.png",
+    "device_count": 10,
+    "homeroom_count": 2,
+    "teacher_count": 4,
+    "student_count": 4
+    "created_at": "2018-07-24T14:45:15.000+08:00",
+    "updated_at": "2018-07-24T14:45:15.000+08:00"
   }
 ]
 ```
