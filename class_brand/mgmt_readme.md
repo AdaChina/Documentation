@@ -41,7 +41,7 @@ Content-Type: application/json
 
 ```json
 {
-  "authenticity_token"： "1HxW...sa234="
+  "authenticity_token": "1HxW...sa234="
 }
 ```
 
@@ -82,7 +82,8 @@ Status: 401 Unauthorized
 ```
 ```json
 {
-  "authentication": "未登陆"
+  "error_code": 1007,
+  "message": "用户未登陆"
 }
 ```
 
@@ -93,6 +94,7 @@ Status: 401 Unauthorized
 ```
 ```json
 {
-  "authorization": "权限不足：当前接口仅允许系统管理员使用"
+  "error_code": 1008,
+  "message": "当前接口仅允许系统管理员使用"
 }
 ```

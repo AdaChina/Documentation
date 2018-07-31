@@ -137,7 +137,7 @@ Status: 200 OK
   "device_count": 10,
   "homeroom_count": 2,
   "teacher_count": 4,
-  "student_count": 4
+  "student_count": 4,
   "created_at": "2018-07-24T14:45:15.000+08:00",
   "updated_at": "2018-07-24T14:45:15.000+08:00"
 }
@@ -178,7 +178,7 @@ Status: 200 OK
     "device_count": 10,
     "homeroom_count": 2,
     "teacher_count": 4,
-    "student_count": 4
+    "student_count": 4,
     "created_at": "2018-07-24T14:45:15.000+08:00",
     "updated_at": "2018-07-24T14:45:15.000+08:00"
   }

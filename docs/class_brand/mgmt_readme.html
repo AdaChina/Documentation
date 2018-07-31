@@ -7,7 +7,7 @@
     <meta name="description" content="ADAChina Backend Documentation">
     
     
-    <link rel="preload" href="/documentation/assets/css/0.styles.15ef48ad.css" as="style"><link rel="preload" href="/documentation/assets/js/app.a6f65cf3.js" as="script"><link rel="preload" href="/documentation/assets/js/8.2a03b3e8.js" as="script"><link rel="prefetch" href="/documentation/assets/js/5.16cf0d2a.js"><link rel="prefetch" href="/documentation/assets/js/2.ea010887.js"><link rel="prefetch" href="/documentation/assets/js/3.a3885e43.js"><link rel="prefetch" href="/documentation/assets/js/4.fd0d6194.js"><link rel="prefetch" href="/documentation/assets/js/6.285b7993.js"><link rel="prefetch" href="/documentation/assets/js/7.d2dd04e3.js"><link rel="prefetch" href="/documentation/assets/js/9.25078652.js"><link rel="prefetch" href="/documentation/assets/js/10.c14aea78.js"><link rel="prefetch" href="/documentation/assets/js/11.b55cd5e4.js"><link rel="prefetch" href="/documentation/assets/js/12.167c359f.js">
+    <link rel="preload" href="/documentation/assets/css/0.styles.15ef48ad.css" as="style"><link rel="preload" href="/documentation/assets/js/app.f739017c.js" as="script"><link rel="preload" href="/documentation/assets/js/8.8b297c8c.js" as="script"><link rel="prefetch" href="/documentation/assets/js/5.16cf0d2a.js"><link rel="prefetch" href="/documentation/assets/js/2.ea010887.js"><link rel="prefetch" href="/documentation/assets/js/3.a3885e43.js"><link rel="prefetch" href="/documentation/assets/js/4.fd0d6194.js"><link rel="prefetch" href="/documentation/assets/js/6.285b7993.js"><link rel="prefetch" href="/documentation/assets/js/7.d2dd04e3.js"><link rel="prefetch" href="/documentation/assets/js/9.25078652.js"><link rel="prefetch" href="/documentation/assets/js/10.c14aea78.js"><link rel="prefetch" href="/documentation/assets/js/11.64826305.js"><link rel="prefetch" href="/documentation/assets/js/12.167c359f.js">
     <link rel="stylesheet" href="/documentation/assets/css/0.styles.15ef48ad.css">
   </head>
   <body>
@@ -24,16 +24,18 @@
 </code></pre></div><p>学校管理类API路由前缀:</p><div class="language- extra-class"><pre class="language-text"><code>${API_ENDPOINT}/school_management/
 </code></pre></div><h2 id="请求格式"><a href="#请求格式" aria-hidden="true" class="header-anchor">#</a> 请求格式</h2><p>传递表单时, Header需要声明使用JSON格式传递：</p><div class="language- extra-class"><pre class="language-text"><code>Content-Type: application/json
 </code></pre></div><p>非GET类请求，请求参数需要提供带上<code>authenticity_token</code>:</p><div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
-  <span class="token string">&quot;authenticity_token&quot;</span>： <span class="token string">&quot;1HxW...sa234=&quot;</span>
+  <span class="token property">&quot;authenticity_token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1HxW...sa234=&quot;</span>
 <span class="token punctuation">}</span>
 </code></pre></div><h2 id="分页信息"><a href="#分页信息" aria-hidden="true" class="header-anchor">#</a> 分页信息</h2><p><strong>分页字段</strong></p><p>列表类接口，会带上分页信息。</p><table><thead><tr><th>字段名</th><th>描述</th></tr></thead><tbody><tr><td>pages</td><td>列表总页数</td></tr><tr><td>page</td><td>当前显示页</td></tr><tr><td>total</td><td>列表资源总数</td></tr><tr><td>items</td><td>当前显示资源数量</td></tr><tr><td>items_per_page</td><td>默认每页资源数量</td></tr></tbody></table><p><strong>分页参数</strong></p><p>列表类接口可通过以下分页参数，控制返回信息。</p><table><thead><tr><th>参数名</th><th>参数类型</th><th>必填</th><th>描述</th><th>示例</th></tr></thead><tbody><tr><td>page</td><td>integer</td><td>否</td><td>返回页</td><td>2</td></tr></tbody></table><p>示例:</p><div class="language- extra-class"><pre class="language-text"><code>GET /system_management/schools?page=2
 </code></pre></div><h2 id="身份验证"><a href="#身份验证" aria-hidden="true" class="header-anchor">#</a> 身份验证</h2><p>除登陆接口外，所有API接口都会验证用户身份。如身份验证失败，接口会返回以下错误的一种。</p><p><strong>未登陆</strong></p><div class="language- extra-class"><pre class="language-text"><code>Status: 401 Unauthorized
 </code></pre></div><div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
-  <span class="token property">&quot;authentication&quot;</span><span class="token operator">:</span> <span class="token string">&quot;未登陆&quot;</span>
+  <span class="token property">&quot;error_code&quot;</span><span class="token operator">:</span> <span class="token number">1007</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;用户未登陆&quot;</span>
 <span class="token punctuation">}</span>
 </code></pre></div><p><strong>权限不足</strong></p><div class="language- extra-class"><pre class="language-text"><code>Status: 401 Unauthorized
 </code></pre></div><div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
-  <span class="token property">&quot;authorization&quot;</span><span class="token operator">:</span> <span class="token string">&quot;权限不足：当前接口仅允许系统管理员使用&quot;</span>
+  <span class="token property">&quot;error_code&quot;</span><span class="token operator">:</span> <span class="token number">1008</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;当前接口仅允许系统管理员使用&quot;</span>
 <span class="token punctuation">}</span>
 </code></pre></div></div><div class="page-edit"><!----><!----></div><div class="page-nav"><p class="inner"><span class="prev">
         ← <a href="/documentation/class_brand/error_code.html" class="prev">
@@ -42,6 +44,6 @@
           错误代码参照表
         </a> →
       </span></p></div></div></div></div>
-    <script src="/documentation/assets/js/8.2a03b3e8.js" defer></script><script src="/documentation/assets/js/app.a6f65cf3.js" defer></script>
+    <script src="/documentation/assets/js/8.8b297c8c.js" defer></script><script src="/documentation/assets/js/app.f739017c.js" defer></script>
   </body>
 </html>
