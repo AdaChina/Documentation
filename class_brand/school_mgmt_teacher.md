@@ -6,6 +6,21 @@
 GET /school_management/teachers
 ```
 
+**请求参数**
+
+| 参数名 | 参数类型 | 必填 | 描述 | 示例 |
+| --- | --- | --- | --- | --- |
+| search | string | 否 | 搜索参数 | 王易 |
+
+**搜索参数**
+
+可搜索范围:
+
+| 字段名 | 描述 |
+| -- | -- |
+| name | 教师姓名 |
+| role_ident_1 | 工号 |
+
 **响应字段**
 
 | 字段名 | 描述 |
@@ -101,7 +116,7 @@ POST /school_management/teachers
 | 参数名 | 参数类型 | 必填 | 描述 | 示例 |
 | --- | --- | --- | --- | --- |
 | name | string | 是 | 教师姓名 | 王易 |
-| avatar_url | file | 否 | 教师头像 | - |
+| avatar | file | 否 | 教师头像 | - |
 | role_ident_1 | string | 是 | 工号 | 1578687269 |
 | mobile | string | 否 | 手机号码 | 13812345678 |
 | email  | integer | 否 | 邮箱地址 | abc@school.edu |
@@ -159,7 +174,7 @@ PATCH /school_management/teachers/:id
 | --- | --- | --- | --- | --- |
 | id | integer | 是 | 教师ID | 120 |
 | name | string | 是 | 教师姓名 | 王易 |
-| avatar_url | file | 否 | 教师头像 | - |
+| avatar | file | 否 | 教师头像 | - |
 | role_ident_1 | string | 是 | 工号 | 1578687269 |
 | mobile | string | 否 | 手机号码 | 13812345678 |
 | email  | integer | 否 | 邮箱地址 | abc@school.edu |
