@@ -119,7 +119,7 @@ POST /school_management/teachers
 | avatar | file | 否 | 教师头像 | - |
 | role_ident_1 | string | 是 | 工号 | 1578687269 |
 | mobile | string | 否 | 手机号码 | 13812345678 |
-| email  | integer | 否 | 邮箱地址 | abc@school.edu |
+| email  | string | 否 | 邮箱地址 | abc@school.edu |
 | gender | string | 是 | 性别 | female |
 
 | gender 参考值 | 描述 |
@@ -145,7 +145,7 @@ POST /school_management/teachers
 成功响应:
 
 ```
-Status: 200 OK
+Status: 201 Created
 ```
 
 ```json
@@ -177,7 +177,7 @@ PATCH /school_management/teachers/:id
 | avatar | file | 否 | 教师头像 | - |
 | role_ident_1 | string | 是 | 工号 | 1578687269 |
 | mobile | string | 否 | 手机号码 | 13812345678 |
-| email  | integer | 否 | 邮箱地址 | abc@school.edu |
+| email  | string | 否 | 邮箱地址 | abc@school.edu |
 | gender | string | 是 | 性别 | female |
 
 | gender 参考值 | 描述 |

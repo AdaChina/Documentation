@@ -54,7 +54,8 @@ module.exports = {
             'error_code',
             'mgmt_session',
             'school_mgmt_school',
-            'school_mgmt_teacher'
+            'school_mgmt_teacher',
+            'school_mgmt_student'
           ]
         },
         {
