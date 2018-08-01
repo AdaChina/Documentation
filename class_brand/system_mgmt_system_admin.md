@@ -17,6 +17,15 @@ GET /system_management/system_admin
 | school_name | 当前学校名字 |
 
 * 如当前系统管理员未配置学校，将不会返回 ```school_id``` 及 ```school_name```
+
+**响应示例**
+
+成功响应:
+
+```
+Status: 200 OK
+```
+
 ```json
 {
   "id": 1,
@@ -52,6 +61,14 @@ PATCH /system_management/system_admin
 | type | 用户类型 |
 | school_id | 当前学校ID |
 | school_name | 当前学校名字 |
+
+**响应示例**
+
+成功响应:
+
+```
+Status: 200 OK
+```
 
 ```json
 {

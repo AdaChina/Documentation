@@ -53,7 +53,8 @@ module.exports = {
             'mgmt_readme',
             'error_code',
             'mgmt_session',
-            'school_mgmt_school'
+            'school_mgmt_school',
+            'school_mgmt_teacher'
           ]
         },
         {
