@@ -54,6 +54,7 @@ module.exports = {
             'error_code',
             'mgmt_session',
             'school_mgmt_school',
+            'school_mgmt_homeroom',
             'school_mgmt_teacher',
             'school_mgmt_student',
             'school_mgmt_parent'

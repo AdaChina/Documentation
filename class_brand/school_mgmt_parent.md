@@ -96,14 +96,14 @@ Status: 201 Created
 ## 更新家长
 
 ```
-PATCH /school_management/parents
+PATCH /school_management/parents/:id
 ```
 
 **请求参数**
 
 | 参数名 | 参数类型 | 必填 | 描述 | 示例 |
 | --- | --- | --- | --- | --- |
-| id | integer | 是 | 学生ID | 160 |
+| id | integer | 是 | 家长ID | 160 |
 | mobile | string | 是 | 手机号码 | 18512344321 |
 
 **响应字段**
