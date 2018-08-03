@@ -117,7 +117,7 @@ Status: 200 OK
 }
 ```
 
-## 配置班牌开关机
+## 配置班牌定时开关
 
 ```
 PATCH /school_management/school/power_schedule

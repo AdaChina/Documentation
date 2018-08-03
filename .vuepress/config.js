@@ -33,25 +33,27 @@ module.exports = {
           title: '班牌端',
           collapsable: true,
           children: [
-            'error_code'
+            'device/',
+            'error_code',
+            'device/utility'
           ]
         },
         {
           title: '后台管理',
           collapsable: true,
           children: [
-            'mgmt_readme',
+            'management/',
             'error_code',
-            'mgmt_session',
-            'system_mgmt/',
-            'system_mgmt/school',
-            'system_mgmt/system_admin',
-            'school_mgmt/',
-            'school_mgmt/school',
-            'school_mgmt/homeroom',
-            'school_mgmt/teacher',
-            'school_mgmt/student',
-            'school_mgmt/parent',
+            'management/session',
+            'management/system/',
+            'management/system/school',
+            'management/system/system_admin',
+            'management/school/',
+            'management/school/school',
+            'management/school/homeroom',
+            'management/school/teacher',
+            'management/school/student',
+            'management/school/parent',
           ]
         },
         {
