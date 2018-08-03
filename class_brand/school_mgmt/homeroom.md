@@ -34,6 +34,7 @@ GET /school_management/homerooms
 | id | 班级ID |
 | name | 班级姓名 |
 | status | 班级状态 |
+| grade_id | 当前年级ID |
 | grade_name | 年级名 |
 | student_count | 学生数量 |
 | teachers: id | 教师ID |
@@ -54,6 +55,7 @@ Status: 200 OK
        "id": 56,
        "name": "一年（1）班",
        "status": "active",
+       "grade_id": 965,
        "grade_name": "一年级",
        "student_count": "58",
        "teachers": [
@@ -90,6 +92,7 @@ GET /school_management/homerooms/:id
 | id | 班级ID |
 | name | 班级姓名 |
 | status | 班级状态 |
+| grade_id | 当前年级ID |
 | grade_name | 年级名 |
 | student_count | 学生数量 |
 | teachers: id | 教师ID |
@@ -108,6 +111,7 @@ Status: 200 OK
    "id": 56,
    "name": "一年（1）班",
    "status": "active",
+   "grade_id": 965,
    "grade_name": "一年级",
    "student_count": "58",
    "teachers": [
@@ -143,6 +147,7 @@ POST /school_management/homerooms
 | id | 班级ID |
 | name | 班级姓名 |
 | status | 班级状态 |
+| grade_id | 当前年级ID |
 | grade_name | 年级名 |
 | student_count | 学生数量 |
 | teachers: id | 教师ID |
@@ -161,6 +166,7 @@ Status: 201 Created
    "id": 56,
    "name": "一年（1）班",
    "status": "active",
+   "grade_id": 965,
    "grade_name": "一年级",
    "student_count": "58",
    "teachers": [
@@ -197,6 +203,7 @@ PATCH /school_management/homerooms/:id
 | id | 班级ID |
 | name | 班级姓名 |
 | status | 班级状态 |
+| grade_id | 当前年级ID |
 | grade_name | 年级名 |
 | student_count | 学生数量 |
 | teachers: id | 教师ID |
@@ -215,6 +222,7 @@ Status: 200 OK
    "id": 56,
    "name": "一年（1）班",
    "status": "active",
+   "grade_id": 965,
    "grade_name": "一年级",
    "student_count": "58",
    "teachers": [

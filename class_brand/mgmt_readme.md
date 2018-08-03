@@ -17,18 +17,6 @@ TBD
 TBD
 ```
 
-## 路由路径
-
-系统管理类API路由前缀:
-```
-${API_ENDPOINT}/system_management/
-```
-
-学校管理类API路由前缀:
-```
-${API_ENDPOINT}/school_management/
-```
-
 ## 请求格式
 
 传递表单时, Header需要声明使用JSON格式传递：

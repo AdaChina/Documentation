@@ -5,6 +5,7 @@ module.exports = {
   serviceWorker: true,
   themeConfig: {
     repo: 'AdaChina/documentation',
+    lastUpdated: 'Last Updated',
     serviceWorker: {
       updatePopup: true
     },
@@ -36,28 +37,21 @@ module.exports = {
           ]
         },
         {
-          title: '系统后台管理',
+          title: '后台管理',
           collapsable: true,
           children: [
             'mgmt_readme',
             'error_code',
             'mgmt_session',
-            'system_mgmt_school',
-            'system_mgmt_system_admin'
-          ]
-        },
-        {
-          title: '学校后台管理',
-          collapsable: true,
-          children: [
-            'mgmt_readme',
-            'error_code',
-            'mgmt_session',
-            'school_mgmt_school',
-            'school_mgmt_homeroom',
-            'school_mgmt_teacher',
-            'school_mgmt_student',
-            'school_mgmt_parent'
+            'system_mgmt/',
+            'system_mgmt/school',
+            'system_mgmt/system_admin',
+            'school_mgmt/',
+            'school_mgmt/school',
+            'school_mgmt/homeroom',
+            'school_mgmt/teacher',
+            'school_mgmt/student',
+            'school_mgmt/parent',
           ]
         },
         {
