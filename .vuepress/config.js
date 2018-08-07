@@ -27,6 +27,29 @@ module.exports = {
       },
     ],
     sidebar: {
+      '/central/': [
+        '',
+        {
+          title: '班牌端',
+          collapsable: true,
+          children: [
+            'device/',
+            'error_code',
+            'device/device'
+          ]
+        },
+        {
+          title: '后台管理',
+          collapsable: true,
+          children: [
+          ]
+        },
+        {
+          title: '微信小程序端',
+          collapsable: true,
+          children: []
+        }
+      ],
       '/class_brand/': [
         '',
         {
@@ -38,8 +61,6 @@ module.exports = {
             'device/utility',
             'device/classroom/',
             'device/classroom/schedule'
-
-
           ]
         },
         {

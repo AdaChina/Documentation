@@ -4,7 +4,7 @@
 
 测试环境:
 ```
-http://classbrand.staging.adachina.net
+http://central.staging.adachina.net
 ```
 
 生产环境：
@@ -39,7 +39,7 @@ Authorization: Basic c24xMjM0NTY3ODphYmNkZWY=
 示例:
 ```
 Authorization: Basic c24xMjM0NTY3ODphYmNkZWY=
-Accept: application/vnd.class-brand.v3+json
+Accept: application/vnd.central.v1+json
 AdaCampus-App-Version: 1.1.0
 AdaCampus-HW-Version: M7-V1
 AdaCampus-Watcher-Version: 1.1.0

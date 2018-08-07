@@ -4,7 +4,7 @@
 
 测试环境:
 ```
-TBD
+http://classbrand.staging.adachina.net
 ```
 
 生产环境：
