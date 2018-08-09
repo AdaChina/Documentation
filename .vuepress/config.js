@@ -58,6 +58,7 @@ module.exports = {
           children: [
             'device/',
             'error_code',
+            'device/device',
             'device/utility',
             'device/classroom/',
             'device/classroom/schedule'

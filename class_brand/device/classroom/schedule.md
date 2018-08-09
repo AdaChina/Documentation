@@ -5,7 +5,7 @@
 提供节次，每日节次课程信息，以及课程考勤信息。默认返回当天及前后3天，共7天的课程表。
 
 ```
-GET /classroom/schedules/daily
+GET ${API_ENDPOINT}/classroom/schedules/daily
 ```
 
 **请求参数**
