@@ -42,6 +42,9 @@ module.exports = {
           title: '后台管理',
           collapsable: true,
           children: [
+            'management/',
+            'error_code',
+            'management/session'
           ]
         },
         {

@@ -6,6 +6,7 @@
 
 ```
 POST /sessions
+POST /signin
 ```
 
 **请求参数**
@@ -21,17 +22,7 @@ POST /sessions
 | 字段名 | 描述 |
 | -- | -- |
 | id | 用户ID |
-| type | 用户类型 |
 | name | 用户姓名 |
-| school_id | 用户所属学校ID |
-| school_name | 用户所属学校名称 |
-
-| type 值参考 | 描述 |
-| -- | -- |
-| SystemAdmin | 系统管理员 |
-| SchoolAdmin | 学校管理员 |
-
-* ```school_id``` 及 ```school_name``` 仅在学校管理员登录时返回。
 
 **响应示例**
 
@@ -44,10 +35,7 @@ Status: 200 OK
 ```json
 {
   "id": 1,
-  "type": "SystemAdmin",
   "name": "王毅",
-  "school_id": 7,
-  "school_name": "越秀路小学"
 }
 ```
 
@@ -67,6 +55,7 @@ Status: 401 Unauthorized
 
 ```
 DELETE /sessions
+DELETE /signout
 ```
 
 **响应示例**

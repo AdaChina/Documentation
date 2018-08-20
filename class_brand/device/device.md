@@ -27,7 +27,7 @@ Status: 200 OK
   "school": {
     "id": 2,
     "name": "越秀路小学",
-    "badge_url": nil
+    "badge_url": null
   },
   "homeroom": {
     "id": 3,
@@ -38,7 +38,7 @@ Status: 200 OK
       "avatar_url": "https://cdn.com/image.png"}
     ],
     "honor": false,
-    "honor_image_url": nil,
+    "honor_image_url": null,
     "honor_events": []
   },
   "classroom":{
@@ -60,14 +60,14 @@ Status: 200 OK
               "start_at": "2016-08-29T08:45:00+08:00",
               "end_at": "2016-08-29T09:30:00+08:00"
             },
-            "course_id": nil,
-            "course_subject": nil,
-            "course_type": nil,
+            "course_id": null,
+            "course_subject": null,
+            "course_type": null,
             "attendance": false,
             "teacher": {
-              "id": nil,
-              "avatar": nil,
-              "name": nil
+              "id": null,
+              "avatar": null,
+              "name": null
             }
           }
           ...
@@ -88,7 +88,7 @@ Status: 200 OK
     "external_sections": [],
     "attendance": false,
     "memo": false
-    },
+  },
   "capabilities": {
     "authorization": {
       "card": false,
@@ -100,13 +100,13 @@ Status: 200 OK
       "attendance": false,
       "attendance_extensions": [
         {
-          "school_arrival_start_at": nil,
-          "school_arrival_end_at": nil,
-          "school_depart_start_at": nil,
-          "school_depart_end_at": nil
+          "school_arrival_start_at": null,
+          "school_arrival_end_at": null,
+          "school_depart_start_at": null,
+          "school_depart_end_at": null
         }
-        ]
-      }
+      ]
+    }
   }
 }
 ```
@@ -119,7 +119,7 @@ Status: 404 Not Found
 
 ```json
 {
-  error_code: 1006
-  message: "当前卡未绑定学生"
+  "error_code": 1006
+  "message": "当前卡未绑定学生"
 }
 ```
