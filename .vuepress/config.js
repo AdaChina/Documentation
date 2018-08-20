@@ -35,7 +35,8 @@ module.exports = {
           children: [
             'device/',
             'error_code',
-            'device/device'
+            'device/device',
+            'device/app_update'
           ]
         },
         {

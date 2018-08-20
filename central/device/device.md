@@ -5,7 +5,7 @@
 获取设备序列号，系统归属信息，以及IoT平台等设备初始化信息。
 
 ```
-GET /device/base
+GET ${API_ENDPOINT}/device/base
 ```
 
 **响应字段**
